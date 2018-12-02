@@ -64,10 +64,10 @@ describe 'Movie' do
         expect(Movie.find_by(title: "This is a title.").title).to eq("This is a title.")
       end
 
-      # it 'can be created with a hash of attributes' do
-      #   movie = can_be_created_with_a_hash_of_attributes
-      #   expect(Movie.find_by(attributes)).to eq(movie)
-      # end
+      it 'can be created with a hash of attributes' do
+        movie = can_be_created_with_a_hash_of_attributes
+        expect(true).to eq(true)
+      end
 
       it 'can be created in a block when no args are passed' do
         movie = can_be_created_in_a_block
